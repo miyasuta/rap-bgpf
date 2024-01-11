@@ -1,0 +1,14 @@
+managed implementation in class zbp_i_flightoccupancy unique;
+strict ( 2 );
+
+define behavior for ZI_FlightOccupancy alias FlightOccupacy
+with unmanaged save
+lock master
+authorization master ( instance )
+{
+  //  create;
+  update;
+  //  delete;
+
+  action calculateOccupacyRate result [1] $self;
+}

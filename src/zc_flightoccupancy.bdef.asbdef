@@ -1,0 +1,8 @@
+projection;
+strict ( 2 );
+
+define behavior for Zc_Flightoccupancy alias FlightOccupancy
+{
+
+  use action calculateOccupacyRate;
+}

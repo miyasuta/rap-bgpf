@@ -1,0 +1,4 @@
+@EndUserText.label: 'Flight Occupancy'
+define service ZFlightOccupancy {
+  expose Zc_Flightoccupancy as FlightOccupancy;
+}

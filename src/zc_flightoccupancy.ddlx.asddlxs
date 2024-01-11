@@ -1,0 +1,39 @@
+@Metadata.layer: #CORE
+annotate view Zc_Flightoccupancy with
+{
+  @UI: {
+    selectionField: [{ position: 10 }] ,
+    lineItem: [{ position: 10 },
+    { type: #FOR_ACTION, dataAction: 'calculateOccupacyRate', label: 'Calculate' }]
+  }
+  AirlineID;
+  @UI: {
+   lineItem: [{ position: 20 }]
+  }
+  ConnectionID;
+  @UI: {
+   selectionField: [{ position: 20 }] ,
+   lineItem: [{ position: 30 }]
+  }
+  FlightDate;
+
+  @UI: {
+   lineItem: [{ position: 40 }]
+  }
+  MaximumSeats;
+
+  @UI: {
+   lineItem: [{ position: 50 }]
+  }
+  OccupiedSeats;
+
+  @UI: {
+   lineItem: [{ position: 60 }]
+  }
+  OccupancyRate;
+
+  @UI: {
+   lineItem: [{ position: 70, criticality: 'Criticality' }]
+  }
+  CalcStatusDisp;
+}
